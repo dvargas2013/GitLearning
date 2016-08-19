@@ -1,17 +1,33 @@
+# initializations
 git init
 git clone https://github.com////.git
 git pull origin master
 
+# editings
 git mv $1 $2
 git rm $1
 
+# check stuff / visualization
 git status 
+git log --graph --oneline --decorate --all
 
+# 3 state process - add,commit,push
+# modifying precommit
 git add .
 git add -u
-
+# commiting
 git commit -m "Committing Yay"
 git commit (use the :wq vimming is hard)
-
+# pushing
 git push
 git push origin master
+
+# change local to seems like the past (or future dun dun duuuun)
+git checkout $1
+
+# see differences between stuff
+git diff --name-status $1..master
+git diff $1 master -- $2
+
+# absorb changes make new merge commit if needed
+git merge $1

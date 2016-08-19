@@ -11,7 +11,7 @@ if [ -z "$1" ]; then
 fi
 
 git init
-remote add origin "$varname"
+git remote add origin "$varname"
 git add .
 git commit -m "First"
 git push --set-upstream origin master
