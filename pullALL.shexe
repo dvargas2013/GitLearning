@@ -8,5 +8,6 @@ echo $dir
 for d in */ ; do
  cd "$dir$d"
  echo "$dir$d"
- git pull
+ git fetch origin --prune
+ git merge --ff-only origin/master || git rebase --preserve-merges origin/master
 done
