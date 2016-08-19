@@ -1,0 +1,17 @@
+#!/bin/bash
+cd "$( dirname "${BASH_SOURCE[0]}" )"
+dir="$( pwd )"$"/"
+cd "$dir"
+echo $dir
+
+if [ -z "$1" ]; then
+  echo "No argument provided: please give repo link"
+  read varname
+  set -- $varname
+fi
+
+git init
+remote add origin "$varname"
+git add .
+git commit -m "First"
+git push --set-upstream origin master
