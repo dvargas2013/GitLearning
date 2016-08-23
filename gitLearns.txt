@@ -17,6 +17,7 @@ git graph
 git add .
 git add -u
 # commiting
+git commit --amend
 git commit -m "Committing Yay"
 git commit (use the :wq vimming is hard)
 # pushing
