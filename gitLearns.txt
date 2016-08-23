@@ -10,7 +10,7 @@ git rm $1
 # check stuff / visualization
 git status 
 git remote -v
-git drawgraph
+git graph
 
 # 3 state process - add,commit,push
 # modifying precommit
