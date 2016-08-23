@@ -1,0 +1,7 @@
+[user]
+	email = dvargas2013@gmail.com
+	name = Daniel Vargas
+[push]
+	default = simple
+[alias]
+	drawgraph = log --graph --oneline --decorate --all
