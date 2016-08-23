@@ -6,3 +6,4 @@
 [alias]
 	graph = !git --no-pager log --graph --oneline --decorate --all -n 20
 	view = checkout
+	reattach = checkout master
