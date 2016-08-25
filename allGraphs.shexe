@@ -9,5 +9,5 @@ for d in */ ; do
  cd "$dir$d"
  echo "--------------------------------------------------------------------------------"
  echo "$dir$d"
- git --no-pager log --graph --oneline --decorate --all -n 20
+ git --no-pager log --graph --oneline --decorate --all -n 10
 done
