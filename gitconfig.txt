@@ -4,6 +4,11 @@
 [push]
 	default = simple
 [alias]
-	graph = !git --no-pager log --graph --oneline --decorate --all -n 20
+	graph = !git --no-pager log --graph --oneline --decorate --all -n
 	view = checkout
 	reattach = checkout master
+	grab = "!git fetch upstream; git checkout master; git rebase upstream/master"
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
