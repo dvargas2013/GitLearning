@@ -3,3 +3,7 @@
 # python bins
 __pycache__/
 *.py[ocd]
+
+# java bins
+bin/
+*.class
