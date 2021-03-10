@@ -6,8 +6,9 @@
 [alias]
 	graph = !git --no-pager log --graph --oneline --decorate --all -n
 	view = checkout
+	cd = checkout
 	reattach = checkout master
-	grab = "!git checkout master; git fetch upstream --prune; git merge --ff-only upstream/master || git rebase --preserve-merges upstream/master"
+	grab = "!f() { git checkout $2; git fetch $1 --prune -v; git merge -v --ff-only "$1/$2" || git rebase -v --preserve-merges "$1/$2"; }; f"
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
