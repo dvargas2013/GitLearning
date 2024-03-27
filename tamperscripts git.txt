@@ -1,0 +1,10 @@
+https://github.com/settings/tokens
+make a new one with write:packages perm
+
+git remote set-url origin https://<Token>@github.com/dzv13/dzv13-Tamperscripts.git
+
+git config --local
+user.name dzv13
+user.email dzv13@yahoo.com
+
+use -l to confirm
